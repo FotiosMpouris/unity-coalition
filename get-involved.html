@@ -4,56 +4,98 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Unity Coalition - Get Involved</title>
-  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
+  <!-- HEADER -->
   <header>
     <img src="images/unitycoalitionlogo.png" alt="Unity Coalition Logo" class="logo"/>
-    <nav>
+    
+    <div class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="mission.html">Mission</a>
       <a href="get-involved.html" class="active">Get Involved</a>
       <a href="projects.html">Projects</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact / Donate</a>
-    </nav>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Donate</a>
+    </div>
   </header>
 
-  <main>
-    <section>
+  <!-- SECTION 1: Black background with involved image & text -->
+  <section class="section-black">
+    <div class="section-content">
       <h1>Get Involved</h1>
-      <img src="images/involved.png" alt="Get Involved Image" style="max-width:100%; height:auto; margin:20px 0;">
+      <img 
+        src="images/involved.png" 
+        alt="Get Involved Image" 
+        style="width:100%; max-width:600px; display:block; margin:20px auto;"
+      />
       <p>
-        We welcome everyone seeking to restore trust and foster unity. Your contributions — be it time, money, or resources — are invaluable. Here are some ways you can take part:
+        Getting involved with the Unity Coalition means joining a structured, 
+        purpose-driven network that goes beyond traditional political activism. 
+        Through our innovative platform, you can connect with like-minded reformers, 
+        contribute to policy discussions, participate in local initiatives, and 
+        help shape the future of American civic engagement.
       </p>
-      <ul>
-        <li><strong>Donate:</strong> <em>(Link to GiveSendGo or show placeholder for now)</em></li>
-        <li><strong>Volunteer:</strong> Host events, join brainstorming sessions, or offer professional expertise.</li>
-        <li><strong>Share Resources:</strong> Media access, meeting locations, partner/donor contacts, etc.</li>
-        <li><strong>Spread the Word:</strong> Post on social media, tell friends, host local gatherings.</li>
-      </ul>
-    </section>
+      <p>
+        Whether you can offer your time, expertise, resources, or financial support, 
+        there are multiple ways to make a meaningful impact within our coalition.
+      </p>
+    </div>
+  </section>
 
-    <section>
-      <h2>Reaching Out to Other Groups</h2>
+  <!-- SECTION 2: White background with founder's message -->
+  <section class="section-white">
+    <div class="section-content">
+      <h2>A Message from Our Founder</h2>
       <p>
-        One of our main objectives is to collaborate with like-minded organizations. If you know a local group or national network that might align with the Unity Coalition’s goals, consider:
+        Throughout my journey across America—from local community building in Massachusetts 
+        to organizing grassroots events nationwide—I’ve witnessed firsthand how the fragmentation 
+        of our civic life affects every community. Yet I’ve also seen an extraordinary willingness 
+        among Americans to work together when given the right framework.
       </p>
-      <ol>
-        <li>Sharing our mission and website.</li>
-        <li>Inviting them to schedule a meet-and-greet or virtual call.</li>
-        <li>Coordinating a joint event or workshop.</li>
-        <li>Pooling resources to address specific shared goals.</li>
-      </ol>
       <p>
-        The more groups we connect with, the closer we come to genuine civic revival.
+        The Unity Coalition isn’t just another organization; it’s a practical response to our 
+        nation’s deepening divides. We’re building a home for those who recognize that our 
+        greatest challenges can only be solved by working across traditional boundaries. 
+        Whether you’re concerned about corporate influence, environmental sustainability, 
+        or the future of democracy itself, your perspective and participation matter.
       </p>
-    </section>
-  </main>
+      <p>
+        Join us in creating not just a movement, but a new way forward for American civic life.
+      </p>
+      <p>
+        <strong>Patrick Clerkin</strong><br/>
+        Founder, Unity Coalition
+      </p>
+    </div>
+  </section>
+
+  <!-- NARROW RED BAND with "Get Involved" button at bottom -->
+  <section class="section-red-narrow">
+    <img 
+      src="images/getinvolved.png" 
+      alt="Get Involved Button Placeholder" 
+      style="max-width: 200px;"
+    />
+    <!-- Hidden comment:
+         You might link this button to a sign-up form, volunteer page, etc.
+    -->
+  </section>
 
   <footer>
     <p>© 2025 Unity Coalition. All rights reserved.</p>
   </footer>
+
+  <!-- Script for the Hamburger Toggle -->
+  <script src="script.js"></script>
 </body>
 </html>
