@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <!-- HEADER with Hamburger & Logo (same as index.html) -->
+  <!-- HEADER -->
   <header>
     <img src="images/unitycoalitionlogo.png" alt="Unity Coalition Logo" class="logo"/>
     
@@ -29,31 +29,71 @@
     </div>
   </header>
 
-  <!-- MAIN Content -->
-  <main>
-    <section>
+  <!-- SECTION 1: Black background, resources intro -->
+  <section class="section-black">
+    <div class="section-content">
       <h1>Resources</h1>
-      <img src="images/resources.png" alt="Resources Banner" style="max-width:100%; height:auto; margin:20px 0;">
+      <img 
+        src="images/resources.png" 
+        alt="Resources Banner" 
+        style="max-width:100%; height:auto; margin:20px 0;"
+      />
       <p>
-        Below are important links and materials to better understand the issues we’re tackling and the progress being made.
+        The Unity Coalition's Resources page serves as a comprehensive knowledge hub, 
+        carefully curated to support both active members and interested visitors in 
+        their pursuit of informed civic engagement. Here you'll find an evolving 
+        collection of essential tools, including verified news sources, government 
+        documentation, educational materials, current Unity Coalition initiatives, 
+        and media resources that illuminate our shared challenges and potential solutions.
       </p>
+      <p>
+        We maintain and regularly update these resources to ensure you have access 
+        to relevant, accurate information that can inform your understanding and 
+        guide effective action. From policy papers and research documents to event 
+        calendars and partner organization materials, our resource library reflects 
+        our commitment to transparency and evidence-based decision-making. Whether 
+        you're researching specific issues, planning local initiatives, or seeking 
+        to better understand the intersections between various reform efforts, these 
+        resources provide a foundation for meaningful participation in the civic 
+        renewal movement.
+      </p>
+      <p>
+        As our coalition grows and evolves, so too will this living repository of 
+        knowledge, reflecting the dynamic nature of our shared work and the emerging 
+        opportunities for positive change.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION 2: White background with your existing links -->
+  <section class="section-white">
+    <div class="section-content">
+      <h2>Links</h2>
       <ul>
-        <li><a href="https://www.whitehouse.gov/news/" target="_blank">WhiteHouse.gov News</a></li>
-        <li><a href="https://x.com/whitehouse?lang=en" target="_blank">The White House on X</a></li>
+        <li>
+          <a href="https://www.whitehouse.gov/news/" target="_blank">WhiteHouse.gov News</a>
+        </li>
+        <li>
+          <a href="https://x.com/whitehouse?lang=en" target="_blank">The White House on X</a>
+        </li>
         <!-- Add more links as needed -->
       </ul>
-      <p>
-        (Feel free to expand this page with PDFs, documents, or embed videos that help visitors stay informed.)
-      </p>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <!-- FOOTER -->
+  <!-- RED BAND with "Get Involved" button -->
+  <section class="section-red-narrow">
+    <img 
+      src="images/getinvolved.png" 
+      alt="Get Involved Button Placeholder" 
+      style="max-width: 200px;"
+    />
+  </section>
+
   <footer>
     <p>© 2025 Unity Coalition. All rights reserved.</p>
   </footer>
 
-  <!-- Script for the Hamburger Toggle -->
   <script src="script.js"></script>
 </body>
 </html>
