@@ -9,7 +9,6 @@
   box-sizing: border-box;
 }
 
-/* Prevent horizontal scroll due to mobile nav overflow */
 html, body {
   overflow-x: hidden;
 }
@@ -30,6 +29,8 @@ body {
   background-color: var(--gray-background);
   color: #333;
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 /* Add a bit more spacing between paragraphs */
@@ -38,17 +39,15 @@ p {
 }
 
 /* --------------------
-   2. Header & Nav
+   2. Fixed Header & Nav
 --------------------- */
 header {
   background-color: var(--space-blue);
   color: var(--white);
-
-  /* Sticky header */
-  position: sticky;
-  top: 0;
-  z-index: 999;
-
+  /* Fixed positioning */
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 9999;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -57,8 +56,8 @@ header {
 
 /* Enlarge the coalition logo */
 header .logo {
-  max-height: 70px; /* increased from 50px */
-  width: auto;      /* maintain aspect ratio */
+  max-height: 70px;
+  width: auto;
 }
 
 /* Nav Container */
@@ -100,12 +99,18 @@ header .logo {
 /* --------------------
    3. Main Content
 --------------------- */
+/* We add margin-top so content starts below the fixed header (approx header height) */
 main {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 80px auto 0 auto; /* 80px from the top to avoid overlap */
   padding: 20px;
 }
+
+/* If a page doesn't have <main> and uses sections directly, 
+   we might need top padding on the first section. 
+   Adjust as needed if your content is hidden behind the header.
+*/
 
 /* Video style for homepage */
 .home-video {
@@ -122,6 +127,7 @@ main {
   background-color: var(--space-blue);
   color: var(--white);
   padding: 40px 20px;
+  margin-top: 80px; /* If needed, ensures not hidden under header */
 }
 
 .section-white {
@@ -146,6 +152,7 @@ main {
   background-color: var(--blood-red);
   text-align: center;
   padding: 10px;
+  margin-top: 20px;
 }
 
 /* --------------------
@@ -181,9 +188,9 @@ footer {
 --------------------- */
 .founder-image {
   max-width: 300px;
-  margin: 0 0 1em 20px; /* default float right spacing */
+  margin: 0 0 1em 20px;
   float: right;
-  display: block; /* ensures the image is block-level */
+  display: block;
 }
 
 /* --------------------
@@ -199,18 +206,18 @@ footer {
   /* Position the nav links off-screen by default */
   .nav-links {
     position: absolute;
-    top: 70px; /* slightly more than the header height */
+    top: 70px; /* just below the fixed header */
     right: 0;
     background-color: var(--blood-red);
     flex-direction: column;
     align-items: flex-start;
     width: 200px;
     padding: 10px;
-    transform: translateX(100%); /* hidden by default */
+    transform: translateX(100%);
   }
 
   .nav-open {
-    transform: translateX(0%); /* Slide in from the right */
+    transform: translateX(0%);
   }
 
   .nav-links a {
