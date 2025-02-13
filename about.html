@@ -4,48 +4,106 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Unity Coalition - About</title>
-  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
+  <!-- HEADER with Hamburger & Logo -->
   <header>
     <img src="images/unitycoalitionlogo.png" alt="Unity Coalition Logo" class="logo"/>
-    <nav>
+    
+    <!-- Hamburger Menu Icon (shown on mobile) -->
+    <div class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- Nav Links -->
+    <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html" class="active">About</a>
       <a href="mission.html">Mission</a>
       <a href="get-involved.html">Get Involved</a>
       <a href="projects.html">Projects</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact / Donate</a>
-    </nav>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Donate</a>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h1>About the Unity Coalition</h1>
-      <img src="images/aboutpage.png" alt="About Page Image" style="max-width:100%; height:auto; margin:20px 0;">
+  <!-- SECTION 1: Black background with main "About" title & image -->
+  <section class="section-black">
+    <div class="section-content">
+      <h1>About Unity Coalition</h1>
       <p>
-        The Unity Coalition is a direct response to a 60-year unraveling of America’s civic core. This effort is led by Founder <strong>C. Patrick Clerkin</strong> who, through extensive travels and personal experiences, recognized the need for a unifying platform that bridges divides.
+        The Unity Coalition stands as a groundbreaking infrastructure connecting 
+        reform-minded Americans across traditional divides. Operating as both a 
+        cultural movement and a structured platform, we bring together populist, 
+        independent, and reform-oriented voices to address our nation’s most 
+        critical challenges.
       </p>
       <p>
-        (You can insert more text from your own about section or the “informational essay” here.)
+        Through our innovative digital hub, we create dedicated spaces where 
+        leaders, organizations, and citizens can collaborate beyond conventional 
+        silos.
       </p>
-    </section>
+      <!-- About Page Image -->
+      <img 
+        src="images/aboutpage.png" 
+        alt="About Unity Coalition" 
+        style="width:100%; max-width:600px; display:block; margin:20px auto;"
+      />
+    </div>
+  </section>
 
-    <section>
-      <h2>Meet the Founder</h2>
-      <img src="images/founderimage.png" alt="Founder Image" style="float:left; margin-right:20px; max-width:200px;">
+  <!-- SECTION 2: White background with deeper explanation -->
+  <section class="section-white">
+    <div class="section-content">
+      <h2>Our Platform</h2>
       <p>
-        Charles “Patrick” Clerkin is a Boston-area native with a background in mechanical engineering, fraternity leadership, and political engagement. He has traveled extensively throughout middle America, building bridges with a wide range of communities. Patrick ran for City Council on a moderate, independent platform, and later set up a local civic hub on Mighty Networks. His passion for reconciling diverse viewpoints has culminated in the establishment of the Unity Coalition.
+        Our platform serves as a comprehensive nexus for change, focusing on ten 
+        crucial domains including corporate accountability, environmental protection, 
+        healthcare reform, and democratic integrity. By providing structured spaces 
+        for collaboration and knowledge-sharing, we enable diverse groups to transcend 
+        ideological boundaries and work together on practical solutions that serve 
+        all Americans.
       </p>
-      <p>
-        (Feel free to add more details about Patrick’s journey, podcasting, campaign experiences, etc. as provided in your earlier text.)
-      </p>
-    </section>
-  </main>
+    </div>
+  </section>
 
+  <!-- SECTION 3: Black background with founder info & image -->
+  <section class="section-black">
+    <div class="section-content">
+      <h2>About the Founder</h2>
+      <!-- Founder Image (floated left or center, as you prefer) -->
+      <img 
+        src="images/founderimage.png" 
+        alt="Founder of Unity Coalition - Patrick Clerkin" 
+        style="width:100%; max-width:300px; float:right; margin:0 0 20px 20px;"
+      />
+      <p>
+        Patrick Clerkin’s path to establishing the Unity Coalition emerged from a 
+        unique combination of technical expertise and civic engagement. His journey 
+        from mechanical engineer to community organizer has been marked by consistent 
+        efforts to bridge divides and foster collaboration.
+      </p>
+      <p>
+        Through extensive cross-country travels, local political involvement, and 
+        leadership in grassroots initiatives, Patrick developed a deep understanding 
+        of America’s challenges at both local and national levels. This experience 
+        shaped his vision for creating a platform where reform-minded citizens can 
+        effectively work together beyond partisan boundaries to achieve lasting 
+        positive change.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
     <p>© 2025 Unity Coalition. All rights reserved.</p>
   </footer>
+
+  <!-- Script for the Hamburger Toggle -->
+  <script src="script.js"></script>
 </body>
 </html>
