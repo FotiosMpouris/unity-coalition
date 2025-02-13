@@ -5,6 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Unity Coalition - Projects</title>
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Additional Projects Grid Specifics */
+    .collaborators {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .collaborator {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 20px;
+    }
+    .collaborator h3 {
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
 
@@ -60,7 +79,7 @@
     </div>
   </section>
 
-  <!-- SECTION 2: White background with the three existing groups -->
+  <!-- SECTION 2: White background with the three existing groups (Grid) -->
   <section class="section-white">
     <div class="section-content">
       <h2>Current Collaborators</h2>
@@ -98,9 +117,10 @@
           />
           <h3>Independent National Coalition</h3>
           <p>
-            A network of non-partisan, pro-democracy organizations working to reduce 
-            corporate control in government and elect more working-class Americans. 
-            Provides informational resources and steps for strengthening democracy.
+            A network of non-partisan, pro-democracy organizations working 
+            to reduce corporate control in government and elect more working-class 
+            Americans. Provides informational resources and steps for strengthening 
+            democracy.
           </p>
           <p>
             <a 
@@ -147,17 +167,12 @@
       alt="Get Involved Button Placeholder" 
       style="max-width: 200px;"
     />
-    <!-- Hidden comment:
-         You might link this band to your "Get Involved" page, sign-up form, or 
-         volunteer opportunities in the future.
-    -->
   </section>
 
   <footer>
     <p>© 2025 Unity Coalition. All rights reserved.</p>
   </footer>
 
-  <!-- Script for the Hamburger Toggle -->
   <script src="script.js"></script>
 </body>
 </html>
