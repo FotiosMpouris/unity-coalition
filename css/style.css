@@ -16,12 +16,12 @@ html, body {
 
 /* Define color variables for easy theme updates */
 :root {
-  --space-blue: #1c2951;
-  --blood-red: #880808;
+  --space-blue: #1c2951;   /* Header background */
+  --blood-red: #880808;    /* Mobile nav background */
   --black: #000000;
   --white: #ffffff;
   --gray-background: #f8f8f8;
-  --red: #b22222; /* Additional accent red if needed */
+  --red: #b22222;          /* Additional accent red if needed */
 }
 
 /* Global Body Styling */
@@ -32,22 +32,33 @@ body {
   line-height: 1.6;
 }
 
+/* Add a bit more spacing between paragraphs */
+p {
+  margin-bottom: 1.2em;
+}
+
 /* --------------------
    2. Header & Nav
 --------------------- */
 header {
   background-color: var(--space-blue);
   color: var(--white);
+
+  /* Sticky header */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
   padding: 10px 20px;
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Logo */
+/* Enlarge the coalition logo */
 header .logo {
-  max-height: 50px;
+  max-height: 70px; /* increased from 50px */
+  width: auto;      /* maintain aspect ratio */
 }
 
 /* Nav Container */
@@ -56,7 +67,6 @@ header .logo {
   gap: 15px;
   align-items: center;
   transition: transform 0.3s ease;
-  /* Start off-screen (to the right) on mobile */
   transform: translateX(0);
 }
 
@@ -131,6 +141,13 @@ main {
   margin: 0 auto;
 }
 
+/* Narrow Red Band for "Get Involved" */
+.section-red-narrow {
+  background-color: var(--blood-red);
+  text-align: center;
+  padding: 10px;
+}
+
 /* --------------------
    5. Title Bar (Full-Width)
 --------------------- */
@@ -160,7 +177,17 @@ footer {
 }
 
 /* --------------------
-   7. Responsive
+   7. Utility Classes
+--------------------- */
+.founder-image {
+  max-width: 300px;
+  margin: 0 0 1em 20px; /* default float right spacing */
+  float: right;
+  display: block; /* ensures the image is block-level */
+}
+
+/* --------------------
+   8. Responsive
 --------------------- */
 @media (max-width: 768px) {
 
@@ -172,9 +199,9 @@ footer {
   /* Position the nav links off-screen by default */
   .nav-links {
     position: absolute;
-    top: 60px;
+    top: 70px; /* slightly more than the header height */
     right: 0;
-    background-color: var(--blood-red); /* hamburger menu background */
+    background-color: var(--blood-red);
     flex-direction: column;
     align-items: flex-start;
     width: 200px;
@@ -189,5 +216,11 @@ footer {
   .nav-links a {
     margin: 10px 0;
     color: var(--white);
+  }
+
+  /* Founder image on mobile: remove float, center it */
+  .founder-image {
+    float: none;
+    margin: 0 auto 1em auto;
   }
 }
