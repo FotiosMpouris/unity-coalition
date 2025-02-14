@@ -5,10 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Unity Coalition - Contact & Donate</title>
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* This pushes the top black section below the fixed header
+       so it doesn't overlap. Adjust 80px as needed. */
+    .section-black.first-section-fix {
+      padding-top: 80px; 
+    }
+  </style>
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- FIXED HEADER -->
   <header>
     <img src="images/unitycoalitionlogo.png" alt="Unity Coalition Logo" class="logo"/>
     
@@ -29,8 +36,8 @@
     </div>
   </header>
 
-  <!-- SECTION 1: Black background, contact info -->
-  <section class="section-black">
+  <!-- FIRST BLACK SECTION WITH PADDING-TOP -->
+  <section class="section-black first-section-fix">
     <div class="section-content">
       <h1>Contact the Unity Coalition</h1>
       <img 
@@ -52,7 +59,7 @@
     </div>
   </section>
 
-  <!-- SECTION 2: White background, donate info -->
+  <!-- WHITE SECTION -->
   <section class="section-white">
     <div class="section-content">
       <h2>Donate</h2>
@@ -76,17 +83,19 @@
         renewal remains independent, effective, and true to its mission of 
         unifying reform efforts across America.
       </p>
-    </section>
-      
-        
+    </div>
+  </section>
+  <!-- Make sure white section is closed before next black section -->
+
+  <!-- SECOND BLACK SECTION: "Support Us Here" -->
   <section class="section-black">
-    <div class="section-content" style="text-align: center;">      
+    <div class="section-content" style="text-align: center;">
       <h3>Support Us Here:</h3>
       <p>
         <a 
           href="https://www.givesendgo.com/building-the-unity-coalition" 
-          target="_blank"          
-          style="display:inline-block; margin-right:20px;" 
+          target="_blank"
+          style="display:inline-block; margin-right:20px;"
         >
           <img 
             src="images/givesend-logo.png" 
@@ -104,8 +113,7 @@
     </div>
   </section>
 
-  <!-- (Optional) RED BAND "Get Involved" at bottom if desired -->
- 
+  <!-- RED BAND -->
   <section class="section-red-narrow">
     <img 
       src="images/getinvolved.png" 
@@ -113,7 +121,6 @@
       style="max-width: 200px;"
     />
   </section>
- 
 
   <footer>
     <p>© 2025 Unity Coalition. All rights reserved.</p>
@@ -122,5 +129,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
