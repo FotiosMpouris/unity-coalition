@@ -68,9 +68,26 @@ header .logo {
 
 .logo-text {
   color: var(--white);
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
+  white-space: nowrap;
 }
+
+@media (max-width: 768px) {
+  /* Adjust logo size on mobile */
+  header .logo {
+    max-height: 50px; /* Smaller logo on mobile */
+  }
+  
+  /* Adjust text size on mobile */
+  .logo-text {
+    font-size: 1.2rem; /* Smaller text on mobile */
+  }
+  
+  /* Make sure the hamburger has enough space */
+  header {
+    padding: 10px 15px;
+  }
 
 /* Nav Container */
 .nav-links {
