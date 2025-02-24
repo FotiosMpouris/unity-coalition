@@ -150,6 +150,25 @@ main {
   border: 2px solid #ccc;
 }
 
+.banner-desktop {
+  display: block;
+}
+
+.banner-mobile {
+  display: none;
+}
+
+/* Show mobile image and hide desktop image on smaller screens */
+@media (max-width: 768px) {
+  .banner-desktop {
+    display: none;
+  }
+  
+  .banner-mobile {
+    display: block;
+  }
+}
+
 /* --------------------
    4. Section Color Blocks
 --------------------- */
