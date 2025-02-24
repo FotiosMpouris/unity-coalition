@@ -60,6 +60,18 @@ header .logo {
   width: auto;
 }
 
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-text {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 /* Nav Container */
 .nav-links {
   display: flex;
