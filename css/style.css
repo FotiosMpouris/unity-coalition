@@ -88,7 +88,7 @@ header .logo {
   header {
     padding: 10px 15px;
   }
-
+}
 /* Nav Container */
 .nav-links {
   display: flex;
@@ -100,7 +100,7 @@ header .logo {
 
 /* Nav Links (Desktop) */
 .nav-links a {
-  color: var(--white);
+  color: var(--white) !important;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -108,7 +108,7 @@ header .logo {
 }
 
 .nav-links a:hover {
-  color: var(--red);
+  color: var(--red) !important;
 }
 
 /* Hamburger Icon */
