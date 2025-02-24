@@ -88,7 +88,7 @@ header .logo {
   header {
     padding: 10px 15px;
   }
-} /* This closing brace was missing */
+}
 
 /* Nav Container */
 .nav-links {
@@ -150,22 +150,29 @@ main {
   border: 2px solid #ccc;
 }
 
-.banner-desktop {
-  display: block;
+/* Responsive Banner Images */
+img.banner-desktop {
+  display: block !important;
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
 }
 
-.banner-mobile {
-  display: none;
+img.banner-mobile {
+  display: none !important;
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
 }
 
 /* Show mobile image and hide desktop image on smaller screens */
 @media (max-width: 768px) {
-  .banner-desktop {
-    display: none;
+  img.banner-desktop {
+    display: none !important;
   }
   
-  .banner-mobile {
-    display: block;
+  img.banner-mobile {
+    display: block !important;
   }
 }
 
