@@ -88,7 +88,8 @@ header .logo {
   header {
     padding: 10px 15px;
   }
-}
+} /* This closing brace was missing */
+
 /* Nav Container */
 .nav-links {
   display: flex;
@@ -100,7 +101,7 @@ header .logo {
 
 /* Nav Links (Desktop) */
 .nav-links a {
-  color: var(--white) !important;
+  color: var(--white);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -108,7 +109,7 @@ header .logo {
 }
 
 .nav-links a:hover {
-  color: var(--red) !important;
+  color: var(--red);
 }
 
 /* Hamburger Icon */
