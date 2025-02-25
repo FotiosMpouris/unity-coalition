@@ -63,7 +63,7 @@ header .logo {
 .logo-group {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 21px;
 }
 
 .logo-text {
